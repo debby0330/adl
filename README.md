@@ -10,7 +10,7 @@
   
 <h2>Paragraph_Selection_Train.py 說明<h2>    
   
-<h5>執行說明<h5>  
+<h4>執行說明<h4>  
    至hugging face選擇模型，並導入  
   
    將model name or path中的defult設至為要用的模型    
