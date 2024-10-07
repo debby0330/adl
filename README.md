@@ -14,7 +14,6 @@
    至hugging face選擇模型，並導入  
   
    將model name or path中的defult設至為要用的模型    
-   
    將dataset_file設至為含有train_data,test_data,valid_data,context_data的資料夾  
    
 
