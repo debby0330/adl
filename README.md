@@ -17,7 +17,7 @@
    將dataset_file設至為含有train_data,test_data,valid_data,context_data的資料夾  
    
 
-<h3>參數說明<h3>    
+<h4>參數說明<h4>    
 
 這部分的程式碼是參考老師提供的hugging face的程式碼。  
 有做更改的部分主要是model name or path、max_length、batch_size、lr_schedual_type參數。  
@@ -26,7 +26,7 @@ max_length設為老師推薦的512，跑得比較快
 batch_size也是設為老師建議的2。
 lr_schedual_type牽涉到learning_rate收斂策略，目前測試下來效果最好的是cosin with restart  
 
-<h3>主程式說明<h3>     
+<h4>主程式說明<h4>     
 
 從390行開始，將原有的變數設置為我們train_data的標題question跟paragraph。  
 444行處，將example設為所有的訓練資料。frist_sentences = 答案，second_sentences = 問題。而這邊將答案乘以4是因為一個答案會對應到4個文本。  
