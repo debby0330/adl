@@ -11,26 +11,26 @@
 <h2>Paragraph_Selection_Train.py 說明<h2>    
   
 <h4>執行說明<h4>  
-   至hugging face選擇模型，並導入  
+   1.至hugging face選擇模型，並導入  
   
-   將model name or path中的defult設至為要用的模型    
-   將dataset_file設至為含有train_data,test_data,valid_data,context_data的資料夾  
+   2.將model name or path中的defult設至為要用的模型    
+   3.將dataset_file設至為含有train_data,test_data,valid_data,context_data的資料夾  
    
 
 <h4>參數說明<h4>    
 
-這部分的程式碼是參考老師提供的hugging face的程式碼。  
-有做更改的部分主要是model name or path、max_length、batch_size、lr_schedual_type參數。  
-model 的部分有嘗試過老師限定的幾個模型，目前試出來效果最好的是 hfl/chinese-lert。  
-max_length設為老師推薦的512，跑得比較快  
-batch_size也是設為老師建議的2。
-lr_schedual_type牽涉到learning_rate收斂策略，目前測試下來效果最好的是cosin with restart  
+1.這部分的程式碼是參考老師提供的hugging face的程式碼。  
+2.有做更改的部分主要是model name or path、max_length、batch_size、lr_schedual_type參數。  
+3.model 的部分有嘗試過老師限定的幾個模型，目前試出來效果最好的是 hfl/chinese-lert。  
+4.max_length設為老師推薦的512，跑得比較快  
+5.batch_size也是設為老師建議的2。
+6.lr_schedual_type牽涉到learning_rate收斂策略，目前測試下來效果最好的是cosin with restart  
 
 <h4>主程式說明<h4>     
 
-從390行開始，將原有的變數設置為我們train_data的標題question跟paragraph。  
-444行處，將example設為所有的訓練資料。frist_sentences = 答案，second_sentences = 問題。而這邊將答案乘以4是因為一個答案會對應到4個文本。  
-451行的[0,0,1,0]、[0,0,0,1].... 代表的是答案對應到四個文本中哪一個正確的文本。  
+1.從390行開始，將原有的變數設置為我們train_data的標題question跟paragraph。  
+2.444行處，將example設為所有的訓練資料。frist_sentences = 答案，second_sentences = 問題。而這邊將答案乘以4是因為一個答案會對應到4個文本。  
+3.451行的[0,0,1,0]、[0,0,0,1].... 代表的是答案對應到四個文本中哪一個正確的文本。  
   
 <h2>Paragraph_Selection_Predict.py 說明<h2> 
 # 段落選擇模型
