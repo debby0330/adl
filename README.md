@@ -32,10 +32,7 @@
 2.444行處，將example設為所有的訓練資料。frist_sentences = 答案，second_sentences = 問題。而這邊將答案乘以4是因為一個答案會對應到4個文本。  
 3.451行的[0,0,1,0]、[0,0,0,1].... 代表的是答案對應到四個文本中哪一個正確的文本。  
   
-<h2>Paragraph_Selection_Predict.py 說明<h2> 
-# 段落選擇模型
-
-本專案包含一個用於從多個段落中選擇與問題最相關段落的模型。該模型使用 Hugging Face 的預訓練模型，並針對多選分類進行微調。
+<h2>Paragraph_Selection_Predict.py 段落選擇模型說明<h2> 
 
 ## 需求
 
