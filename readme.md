@@ -6,8 +6,7 @@
 <h4> Paragraph selection <h4>
 1. Train Paragraph election model     
 
-    
-  `python Paragraph_Selection_Train.py --train_file .\data\train.json --validation_file .\data\valid.json --test_file .\data\test.json --output_dir .\data\result\ --model_name_or_path "hfl/chinese-macbert-base"`
+  ```cmd python Paragraph_Selection_Train.py --train_file .\data\train.json --validation_file .\data\valid.json --test_file .\data\test.json --output_dir .\data\result\ --model_name_or_path "hfl/chinese-macbert-base"
 
   
 
