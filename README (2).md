@@ -34,7 +34,7 @@ python news_summarize_train.py --model_name_or_path yihsuan/mt5_chinese_small --
 To test the model, run the following command:  
 
 ```cmd
-python predict_mT5.py --model_name_or_path .\models\mt5-small_chinese_E10_warmup_3e5_B64_ML256 --output_dir .\data\public_submission_.jsonl --num_beams 5 --test_file .\data\public.jsonl
+python predict_mT5.py --model_name_or_path .\models\mt5-small_chinese_E10_warmup_3e5_B64_ML256 --output_dir .\data\public_submission_.jsonl --num_beams 3 --test_file .\data\public.jsonl
 ```
 
 
